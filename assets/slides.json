@@ -1,0 +1,22 @@
+{
+  "images": {
+    "path_root": "/images/slides/",
+    "slides" : [
+      { 
+        "ID": "001",
+        "name": "Slide 1",
+        "image": "bg-1.png"
+      },
+      { 
+        "ID": "002",
+        "name": "Slide 2",
+        "image": "bg-2.png"
+      },
+      { 
+        "ID": "003",
+        "name": "Slide 3",
+        "image": "bg-3.png"
+      }
+    ]
+  }
+}
