@@ -1,26 +1,10 @@
-var request = new XMLHttpRequest();
-request.open('GET', '/my/url', true);
-
-request.onload = function() {
-  if (request.status >= 200 && request.status < 400) {
-    // Success!
-    var data = JSON.parse(request.responseText);
-  } else {
-    // We reached our target server, but it returned an error
-
-  }
-};
-
-request.onerror = function() {
-  // There was a connection error of some sort
-};
-
-// request.send();
-
 // To implement toggleMenu
 // Button with class js-toggleMenuBtn and attr data-menu="value"
 // Menu with class js-toggleMenu and attr data-menu="value"
-const toggleMenuBtn = document.querySelector('.js-toggleMenuBtn');
+const toggleMenuBtn = document.querySelector('.js-toggleMenuBtn'),
+      toggleIco = (el) => {
+  el.classList.toggle('fa-times', 'fa-bars')
+}
 
 toggleMenuBtn.addEventListener('click', event => {
   const btn = event.target,
@@ -29,8 +13,19 @@ toggleMenuBtn.addEventListener('click', event => {
   toggleIco(btn);
   menu.classList.toggle('is-hide-mobile');
   document.body.classList.toggle('is-overflow');
-})
+});
 
-const toggleIco = (el) => {
-  el.classList.toggle('fa-times', 'fa-bars')
+// Load slides from json
+const loadJSON = callback => {   
+  let xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+  xobj.open('GET', 'assets/slides.json', true);
+  xobj.onreadystatechange = () => {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+  xobj.send(null);  
 }
+
+loadJSON(res => console.log(res));
