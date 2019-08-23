@@ -4,18 +4,18 @@
     "slides" : [
       { 
         "ID": "001",
-        "name": "Slide 1",
+        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
         "image": "bg-1.png"
       },
       { 
         "ID": "002",
-        "name": "Slide 2",
+        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
         "image": "bg-2.png"
       },
       { 
         "ID": "003",
-        "name": "Slide 3",
-        "image": "bg-3.png"
+        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
+        "image": "bg-3.jpg"
       }
     ]
   }

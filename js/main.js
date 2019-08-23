@@ -17,13 +17,18 @@ request.onerror = function() {
 
 // request.send();
 
-const toggleMenu = document.querySelector('.js-toggleMenu');
+// To implement toggleMenu
+// Button with class js-toggleMenuBtn and attr data-menu="value"
+// Menu with class js-toggleMenu and attr data-menu="value"
 const toggleMenuBtn = document.querySelector('.js-toggleMenuBtn');
 
 toggleMenuBtn.addEventListener('click', event => {
-  toggleIco(toggleMenuBtn);
-  console.log(toggleMenuBtn)
-  toggleMenu.classList.toggle('is-hide-mobile', '');
+  const btn = event.target,
+        menuBind = btn.dataset.menu,
+        menu = document.querySelector(`.js-toggleMenu[data-menu=${menuBind}]`);
+  toggleIco(btn);
+  menu.classList.toggle('is-hide-mobile');
+  document.body.classList.toggle('is-overflow');
 })
 
 const toggleIco = (el) => {
