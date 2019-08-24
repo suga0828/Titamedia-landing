@@ -1,17 +1,17 @@
 {
-  "path_root": "/images/slides/",
-  "slides" : [
-    { 
+  "path_root": "./images/slides/",
+  "slides": [
+    {
       "title": "Background one",
       "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
-      "name": "bg-1.png"
+      "name": "bg-1.jpg"
     },
-    { 
+    {
       "title": "Background two",
       "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
-      "name": "bg-2.png"
+      "name": "bg-2.jpg"
     },
-    { 
+    {
       "title": "Background three",
       "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
       "name": "bg-3.jpg"

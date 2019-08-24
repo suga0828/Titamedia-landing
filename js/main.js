@@ -12,22 +12,26 @@ toggleMenuBtn.addEventListener('click', event => {
   document.body.classList.toggle('is-overflow');
 });
 
-const toggleIco = (el) => {
-  el.classList.toggle('fa-times', 'fa-bars')
-}
+const toggleIco = el => {
+  if (el.innerHTML === 'X') {
+    el.innerHTML = '☰';
+  } else {
+    el.innerHTML = 'X';
+  }
+};
 
 // Load json
-const loadJSON = callback => {   
+const loadJSON = callback => {
   let xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
+  xobj.overrideMimeType('application/json');
   xobj.open('GET', 'assets/slides.json', true);
-  xobj.onreadystatechange = (e) => {
+  xobj.onreadystatechange = e => {
     if (xobj.readyState === 4 && xobj.status === 200) {
       callback(xobj.responseText);
     }
   };
-  xobj.send(null);  
-}
+  xobj.send(null);
+};
 
 loadJSON(res => {
   const data = JSON.parse(res);
@@ -40,7 +44,7 @@ const loadSlider = data => {
   const images = data.slides;
   const slider = document.querySelector('#hero');
   let slides = slider.querySelector('.glide__slides');
-  for(let i = 0; i < images.length; i++) {
+  for (let i = 0; i < images.length; i++) {
     let slide = document.createElement('li');
     const title = document.createElement('h2');
     const image = document.createElement('img');
@@ -55,20 +59,16 @@ const loadSlider = data => {
     slide.appendChild(title);
     slide.appendChild(image);
     slides.appendChild(slide);
-  console.log(slider, slide)
-
   }
-
-  console.log(slides)
 
   // Glide options
   const glide = new Glide('#hero', {
     gap: 0,
     type: 'slider',
     autoplay: 3000,
-    animationDuration: 700,
+    animationDuration: 700
   });
   // Instance of glide Class
 
   glide.mount();
-}
+};

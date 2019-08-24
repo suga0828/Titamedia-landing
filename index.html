@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Titamedia Landing</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glidejs@2.1.0/dist/css/glide.core.min.css">
-  <script src="https://kit.fontawesome.com/7e42a074b4.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <header class="navbar container">
-    <a class="navbar__brand" href="">
-      <img src="./images/brand.png" alt="Brand">
-    </a>
-    <ul class="navbar__list is-hide-mobile js-toggleMenu" data-menu="menu">
-      <li class="navbar__list-item">
-        <a href="#">Home</a>
-      </li>
-      <li class="navbar__list-item">
-        <a href="#">About</a>
-      </li>
-      <li class="navbar__list-item">
-        <a href="#">Products</a>
-      </li>
-      <li class="navbar__list-item">
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-    <button class="navbar__btn is-hide-tablet js-toggleMenuBtn fas fa-bars" data-menu="menu"></button>
-  </header>
-  <main>
-    <section class="hero">
-      <!-- slider -->
-      <div class="glide hero" id="hero">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides"></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Titamedia Landing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glidejs@2.1.0/dist/css/glide.core.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar container">
+      <a class="navbar__brand" href="">
+        <img src="./images/brand.png" alt="Brand" />
+      </a>
+      <ul class="navbar__list is-hide-mobile js-toggleMenu" data-menu="menu">
+        <li class="navbar__list-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="navbar__list-item">
+          <a href="#">About</a>
+        </li>
+        <li class="navbar__list-item">
+          <a href="#">Products</a>
+        </li>
+        <li class="navbar__list-item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <button
+        class="navbar__btn is-hide-tablet js-toggleMenuBtn"
+        data-menu="menu"
+        aria-label="Toggle menu"
+      >
+        ☰
+      </button>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="glide hero" id="hero">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides"></ul>
+          </div>
         </div>
-      </div>
-      <!-- slider end -->
-    </section>
-    <section class="content container">
-      <div class="content__info">
-        <h1 class="content__title">Lorem ipsum dolor sit amet.</h1>
-        <hr class="content__separator" />
-        <h3 class="content__subtitle">Lorem ipsum dolor sit amet.</h3>
-        <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis quidem, perspiciatis ullam suscipit tenetur veniam facere dolore quisquam, impedit quam consequatur laborum laboriosam tempore quos nobis ipsa? Debitis, deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates suscipit perspiciatis nulla aliquam? Exercitationem beatae ad laborum blanditiis, quis vitae dolor nemo, cumque corrupti, expedita eveniet maiores. Obcaecati, ad tempora.</p>
-        <a class="content__link" href="#">You can learn more about the sample here.</a>
-      </div>
-      <aside class="content__aside">
-        <img src="./images/phone.png" alt="Product image">
-      </aside>
-    </section>
-  </main>
-  <footer></footer>
-<script src="./js/main.js"></script>
-</body>
+      </section>
+      <section class="content container">
+        <div class="content__info">
+          <h1 class="content__title">Lorem ipsum dolor sit amet.</h1>
+          <hr class="content__separator" />
+          <h3 class="content__subtitle">Lorem ipsum dolor sit amet.</h3>
+          <p class="content__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            corporis quidem, perspiciatis ullam suscipit tenetur veniam facere
+            dolore quisquam, impedit quam consequatur laborum laboriosam tempore
+            quos nobis ipsa? Debitis, deserunt. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Voluptates suscipit perspiciatis
+            nulla aliquam? Exercitationem beatae ad laborum blanditiis, quis
+            vitae dolor nemo, cumque corrupti, expedita eveniet maiores.
+            Obcaecati, ad tempora.
+          </p>
+          <a class="content__link" href="#"
+            >You can learn more about the sample here.</a
+          >
+        </div>
+        <aside class="content__aside">
+          <img src="./images/phone.png" alt="Product image" />
+        </aside>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
