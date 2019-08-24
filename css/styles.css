@@ -2,10 +2,8 @@
 
 :root {
   --grey: #3f3f3f;
-  --light-grey: #7f7e7e;
-  --blue: #4478a6;
-  --green: #118c69;
-  --gold: #d9b54a;
+  --light-grey: #757575;
+  --green: #108463;
   --white: #ffffff;
 }
 
@@ -142,8 +140,8 @@ body {
 }
 
 .content__aside img {
-  min-width: 300px;
-  width: 100%;
+  margin: 0 auto;
+  width: 300px;
   padding-top: 20px;
 }
 
