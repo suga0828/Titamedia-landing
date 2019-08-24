@@ -10,7 +10,18 @@ toggleMenuBtn.addEventListener('click', event => {
   toggleIco(btn);
   menu.classList.toggle('is-hide-mobile');
   document.body.classList.toggle('is-overflow');
+  ifDesktopHideMenu(btn, menu);
 });
+
+const ifDesktopHideMenu = (btn, menu) => {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 767) {
+      document.body.classList.remove('is-overflow');
+      menu.classList.add('is-hide-mobile');
+      btn.innerHTML = '☰';
+    }
+  });
+};
 
 const toggleIco = el => {
   if (el.innerHTML === 'X') {
