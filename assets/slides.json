@@ -1,22 +1,20 @@
 {
-  "images": {
-    "path_root": "/images/slides/",
-    "slides" : [
-      { 
-        "ID": "001",
-        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
-        "image": "bg-1.png"
-      },
-      { 
-        "ID": "002",
-        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
-        "image": "bg-2.png"
-      },
-      { 
-        "ID": "003",
-        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
-        "image": "bg-3.jpg"
-      }
-    ]
-  }
+  "path_root": "/images/slides/",
+  "slides" : [
+    { 
+      "title": "Background one",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
+      "name": "bg-1.png"
+    },
+    { 
+      "title": "Background two",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
+      "name": "bg-2.png"
+    },
+    { 
+      "title": "Background three",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique delectus repudiandae repellat.",
+      "name": "bg-3.jpg"
+    }
+  ]
 }
