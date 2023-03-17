@@ -1,4 +1,4 @@
-# Titamedia-landing
+# Generic-landing-page
 
 ## English
 
@@ -6,7 +6,7 @@ Responsive Landing Page created using Vanilla CSS (just CSS, no framework). Slid
 
 ###### Where can I see the demo?
 
-At [this website](https://suga0828.github.io/Titamedia-landing/).
+At [this website](https://suga0828.github.io/Generic-landing-page/).
 
 ## Español
 
@@ -14,4 +14,4 @@ Página de destino adaptable creada usando Vanilla CSS (código CSS nativo, sin 
 
 ###### ¿Dónde puedo ver una muestra?
 
-En [esta página](https://suga0828.github.io/Titamedia-landing/).
+En [esta página](https://suga0828.github.io/Generic-landing-page/).
